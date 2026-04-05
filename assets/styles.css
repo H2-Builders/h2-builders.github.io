@@ -147,8 +147,7 @@ nav {
   border-radius: var(--radius);
   border-top: 3px solid var(--red);
   padding: 1.5rem;
-  align-self: flex-start;
-  margin-top: 2rem;
+  align-self: center;
 }
 
 .hero-card-label {
@@ -187,6 +186,15 @@ nav {
   word-break: break-all;
 }
 .hero-card-row a:hover { color: var(--red); }
+
+.hero .hero-card p {
+  color: var(--dark) !important;
+  font-size: inherit;
+  margin-bottom: 0;
+  max-width: none;
+  line-height: inherit;
+  opacity: 1;
+}
 
 .hero-card .btn-red {
   display: block;
