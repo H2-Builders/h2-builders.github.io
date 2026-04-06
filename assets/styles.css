@@ -252,10 +252,16 @@ nav {
   flex-wrap: wrap;
 }
 
-.hero-trust span {
+.hero-trust span,
+.hero-trust a {
   font-size: .8rem;
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.6);
   font-weight: 500;
+  text-decoration: none;
+  transition: color .2s;
+}
+.hero-trust a:hover {
+  color: var(--white);
 }
 
 /* ── Services + contact sidebar layout ─────────────────── */
