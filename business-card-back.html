@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 1050px;
+      height: 600px;
+      overflow: hidden;
+      font-family: 'Inter', Arial, sans-serif;
+      background: #C41E24;
+    }
+    .card-back {
+      width: 1050px;
+      height: 600px;
+      background: #C41E24;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .card-back::before {
+      content: '';
+      position: absolute;
+      top: -150px;
+      left: -150px;
+      width: 525px;
+      height: 525px;
+      border: 90px solid rgba(255,255,255,0.06);
+      border-radius: 50%;
+    }
+    .card-back::after {
+      content: '';
+      position: absolute;
+      bottom: -180px;
+      right: -120px;
+      width: 480px;
+      height: 480px;
+      border: 75px solid rgba(0,0,0,0.06);
+      border-radius: 50%;
+    }
+    .back-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      position: relative;
+      z-index: 1;
+    }
+    .back-wordmark {
+      display: flex;
+      align-items: baseline;
+      letter-spacing: -4px;
+      line-height: 0.9;
+    }
+    .back-logo-h {
+      font-size: 165px;
+      font-weight: 800;
+      color: rgba(255,255,255,0.95);
+    }
+    .back-logo-2 {
+      font-size: 165px;
+      font-weight: 800;
+      color: rgba(0,0,0,0.22);
+    }
+    .back-rule {
+      width: 240px;
+      height: 3px;
+      background: rgba(255,255,255,0.4);
+      margin: 14px 0 12px;
+    }
+    .back-builders {
+      font-size: 34px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.9);
+      letter-spacing: 27px;
+      text-transform: uppercase;
+    }
+    .back-tagline {
+      font-size: 18px;
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 0.5px;
+      margin-top: 16px;
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-back">
+    <div class="back-content">
+      <div class="back-wordmark">
+        <span class="back-logo-h">H</span><span class="back-logo-2">2</span>
+      </div>
+      <div class="back-rule"></div>
+      <div class="back-builders">Builders</div>
+      <div class="back-tagline">General Contracting &amp; Renovation · GTA &amp; Surrounding</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 1050px;
+      height: 600px;
+      overflow: hidden;
+      font-family: 'Inter', Arial, sans-serif;
+      background: #111111;
+    }
+    .card-front {
+      width: 1050px;
+      height: 600px;
+      background: #111111;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+    }
+    .card-front::before {
+      content: '';
+      position: absolute;
+      top: -90px;
+      right: -90px;
+      width: 420px;
+      height: 420px;
+      border: 60px solid rgba(196, 30, 36, 0.08);
+      border-radius: 50%;
+    }
+    .card-front::after {
+      content: '';
+      position: absolute;
+      bottom: -120px;
+      right: 120px;
+      width: 270px;
+      height: 270px;
+      border: 38px solid rgba(196, 30, 36, 0.05);
+      border-radius: 50%;
+    }
+    .front-stripe {
+      width: 11px;
+      background: #C41E24;
+      flex-shrink: 0;
+    }
+    .front-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 54px 75px 52px 60px;
+      position: relative;
+      z-index: 1;
+    }
+    .logo { display: flex; flex-direction: column; }
+    .logo-wordmark {
+      display: flex;
+      align-items: baseline;
+      line-height: 1;
+      letter-spacing: -3px;
+    }
+    .logo-h {
+      font-size: 108px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 0.9;
+    }
+    .logo-2 {
+      font-size: 108px;
+      font-weight: 800;
+      color: #C41E24;
+      line-height: 0.9;
+    }
+    .logo-rule {
+      width: 163px;
+      height: 3px;
+      background: rgba(255,255,255,0.55);
+      margin: 9px 0 8px;
+    }
+    .logo-builders {
+      font-size: 25px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 18px;
+      text-transform: uppercase;
+    }
+    .tagline {
+      font-size: 16px;
+      color: rgba(255,255,255,0.38);
+      letter-spacing: 0.5px;
+      font-weight: 400;
+    }
+    .divider-line {
+      width: 1px;
+      background: rgba(255,255,255,0.1);
+      align-self: stretch;
+      margin: 60px 15px 60px 30px;
+      flex-shrink: 0;
+    }
+    .front-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 54px 65px 52px 0;
+      align-items: flex-end;
+      gap: 12px;
+      position: relative;
+      z-index: 1;
+      min-width: 310px;
+    }
+    .contact-name {
+      font-size: 23px;
+      font-weight: 600;
+      color: #FFFFFF;
+      letter-spacing: 0.3px;
+      text-align: right;
+      margin-bottom: 4px;
+    }
+    .contact-title {
+      font-size: 13px;
+      font-weight: 500;
+      color: #C41E24;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-align: right;
+      margin-bottom: 14px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+    .contact-text {
+      font-size: 16px;
+      color: rgba(255,255,255,0.72);
+      font-weight: 400;
+      text-align: right;
+    }
+    .contact-icon {
+      width: 19px;
+      height: 19px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-front">
+    <div class="front-stripe"></div>
+    <div class="front-content">
+      <div class="logo">
+        <div class="logo-wordmark">
+          <span class="logo-h">H</span><span class="logo-2">2</span>
+        </div>
+        <div class="logo-rule"></div>
+        <div class="logo-builders">Builders</div>
+      </div>
+      <div class="tagline">General Contracting &amp; Renovation · GTA &amp; Surrounding</div>
+    </div>
+    <div class="divider-line"></div>
+    <div class="front-right">
+      <div class="contact-name">Umar Farooq</div>
+      <div class="contact-title">Owner &amp; Contractor</div>
+      <div class="contact-item">
+        <span class="contact-text">647-713-9329</span>
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="#C41E24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.1 2.18 2 2 0 012.08 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+      </div>
+      <div class="contact-item">
+        <span class="contact-text">umar19960607@gmail.com</span>
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="#C41E24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </div>
+      <div class="contact-item">
+        <span class="contact-text">GTA &amp; Surrounding</span>
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="#C41E24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
